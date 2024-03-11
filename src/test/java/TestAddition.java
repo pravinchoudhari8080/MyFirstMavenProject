@@ -13,6 +13,13 @@ public class TestAddition
        int expected=20;
        int actual=ad.add(10,10);
      Assertions.assertEquals(expected,actual);
-
+   }
+   @Test
+   public void testWithNegative()
+   {
+       Addition ad=new Addition();
+       int expexted=-10;
+       int actaul=ad.add(-20,10);
+       Assertions.assertEquals(expexted,actaul);
    }
 }
